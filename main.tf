@@ -25,6 +25,6 @@ resource "aws_instance" "app_server" {
   #               nohup busybox httpd -f -p 8000 &
   #               EOF
   tags = {
-    Name = "VM_InfraComoCodigo"
+    Name = "Terraform Ansible Python"
   } 
 }
