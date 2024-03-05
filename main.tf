@@ -18,6 +18,12 @@ resource "aws_instance" "app_server" {
   ami           = "ami-008fe2fc65df48dac"
   instance_type  = "t2.micro"
   key_name = "iac-alura"
+  #user_data = <<-EOF
+  #               #!/bin/bash
+  #               cd /home/ubuntu
+  #               echo "<h1>Feito com Terraform</h1>" > index.html
+  #               nohup busybox httpd -f -p 8000 &
+  #               EOF
   tags = {
     Name = "VM_InfraComoCodigo"
   } 
